@@ -4,7 +4,7 @@ TAG is a tool to help you find a name for your paper which matches the *WATER ST
 
 Given a string X and a title Y, X is referred as the *WATER STYLE* subsequence of Y if:
 1. X is a frequently used English word.
-2. Each word in Y must have at least one character that appear in X.
+2. Each word in Y must have at least one character that appears in X.
 3. X is a subsequence of Y.
 
 There are currently two supported arguments currently:
