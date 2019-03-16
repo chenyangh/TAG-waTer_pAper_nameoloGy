@@ -1,15 +1,23 @@
 from nltk import FreqDist
 from nltk.corpus import brown
 from nltk.corpus import stopwords
-import  nltk
+import nltk
 import string
-import parser
+import argparse
+parser = argparse.ArgumentParser(description='Options')
+parser.add_argument('-bin', default=1000, type=int,
+                    help="the number of frequent words you are searching from")
+parser.add_argument('-title', default='Water Paper Nameology', type=str,
+                    help="tile of the paper")
+opt = parser.parse_args()
+
+
 nltk.download('stopwords')
 nltk.download('brown')
 
-BIN_SIZE = 1000
+BIN_SIZE = opt.bin
 REMOVE_STOPWORDS = True
-TITLE = 'Enhanced Representation from kNowledge IntEgration'
+TITLE = opt.title
 
 stopwords = list(stopwords.words('english'))
 
