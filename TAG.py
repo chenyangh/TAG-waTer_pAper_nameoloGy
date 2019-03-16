@@ -94,6 +94,9 @@ def match_water_style(cand, paper_name):
         if sorted(possible_path) == possible_path:
             if is_subseq(list(range(len(paper_name.split()))), possible_path):
                 if len(path) == len(set(path)):
+                    if len(path) != len(cand):
+                        break
+
                     flag = False
                     for i in range(len(paper_name.split())):
                         tmp = []
@@ -105,14 +108,16 @@ def match_water_style(cand, paper_name):
                             break
                     if not flag:
                         # print MATCHED
-                        final_name = []
                         title_list = paper_name.split()
+
+                        new_words = [list(x) for x in title_list]
+
                         for p in path:
-                            new_word = list(title_list[p[0]])
-                            new_word[p[1]] = new_word[p[1]].upper()
-                            new_word = ''.join(new_word)
-                            final_name.append(new_word)
-                        print(cand.upper(), ':', ' '.join(final_name))
+                            new_words[p[0]][p[1]] = new_words[p[0]][p[1]].upper()
+
+                        new_words = [''.join(x) for x in new_words]
+
+                        print(cand.upper(), ':', ' '.join(new_words))
                         return True
 
     return False
@@ -120,5 +125,5 @@ def match_water_style(cand, paper_name):
 
 for word in matched_words:
     match_water_style(word, water_paper_name)
-
+# match_water_style('tag', water_paper_name)
 
