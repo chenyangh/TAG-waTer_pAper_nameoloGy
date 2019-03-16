@@ -12,7 +12,7 @@ There are currently two supported arguments currently:
 -title: the title of the paper 
 
 ```
-python TAG.py -bin=10000 -title="Water Paper NameOlogy"
+python TAG.py -bin=10000 -title="Water Paper Nameology"
 ```
 Would yield the following matches:
 
