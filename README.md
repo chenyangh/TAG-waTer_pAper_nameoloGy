@@ -17,16 +17,29 @@ python TAG.py -bin=10000 -title="Water Paper NameOlogy"
 Would yield the following matches:
 
 WAY : Water pAper nameologY
+
 TEN : waTer papEr Nameology
+
 TRY : waTer papeR nameologY
+
 TEAM : waTEr pAper naMeology
+
 TERM : waTEr papeR naMeology
+
 WARM : WAter papeR naMeology
+
 TREE : waTeR papEr namEology
+
 TAPE : waTer pAPer namEology
+
 TEA : waTer papEr nAmeology
+
 TRAY : waTeR pAper nameologY
+
 WEARY : WatEr pApeR nameologY
+
 WARN : WAter papeR Nameology
+
 TAN : waTer pAper Nameology
+
 WARMLY : WAter papeR naMeoLogY
