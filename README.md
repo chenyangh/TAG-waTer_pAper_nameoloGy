@@ -7,7 +7,7 @@ Given a string X and a title Y, X is referred as the *WATER STYLE* subsequence o
 2. Each word in Y must have at least one character that appears in X.
 3. X is a subsequence of Y.
 
-There are currently two supported arguments currently:
+There are two supported arguments currently:
 -bin: the number of most frequent words in nltk's *brown* corpora that will be considered.
 -title: the title of the paper 
 
