@@ -16,7 +16,6 @@ nltk.download('stopwords')
 nltk.download('brown')
 
 BIN_SIZE = opt.bin
-REMOVE_STOPWORDS = True
 TITLE = opt.title
 
 stopwords = list(stopwords.words('english'))
@@ -33,8 +32,12 @@ freq_words_no_stopwords = [value for value in freq_words
 
 water_paper_name = TITLE.lower().strip()
 
-if REMOVE_STOPWORDS:
-    water_paper_name = ' '.join([x for x in water_paper_name.split() if x not in stopwords])
+old_water_paper_name = water_paper_name
+
+water_paper_name = ' '.join([x for x in water_paper_name.split() if x not in stopwords])
+
+stopwords_water_paper_name = [(i, x)for i, x in enumerate(old_water_paper_name.split())
+                              if x in stopwords]
 
 water_paper_name_combined = ''.join([x for x in water_paper_name.split()])
 
@@ -116,6 +119,11 @@ def match_water_style(cand, paper_name):
                             new_words[p[0]][p[1]] = new_words[p[0]][p[1]].upper()
 
                         new_words = [''.join(x) for x in new_words]
+
+                        # print('before,', ' '.join(new_words))
+                        for i, s in stopwords_water_paper_name:
+                            # print('inserting', i, s)
+                            new_words.insert(i, s)
 
                         print(cand.upper(), ':', ' '.join(new_words))
                         return True
