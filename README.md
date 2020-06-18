@@ -12,44 +12,58 @@ There are two supported arguments currently:
 -title: the title of the paper 
 
 ```
-python TAG.py -bin=100000 -title="Water Paper Nameology"
+python TAG.py -bin=20000 -title="Water Paper Nameology"
 ```
 would yield the following matches in a few seconds:
 
 WAY : Water pAper nameologY
-TEN : waTer papEr Nameology
-TRY : waTer papeR nameologY
-TEAM : waTEr pAper naMeology
-TERM : waTEr papeR naMeology
-WARM : WAter papeR naMeology
-TREE : waTeR papEr namEology
-TAPE : waTer pAPer namEology
-TEA : waTer papEr nAmeology
-TRAY : waTeR pAper nameologY
-WEARY : WatEr pApeR nameologY
-WARN : WAter papeR Nameology
-TAN : waTer pAper Nameology
-WARMLY : WAter papeR naMeoLogY
-TERRY : waTER papeR nameologY
-WARY : WAter papeR nameologY
-TEEN : waTEr papEr Nameology
-TEE : waTer papEr namEology
-**TAG : waTer pAper nameoloGy**
-WRY : Water papeR nameologY
-TAME : waTer pAper naMEology
-WEE : Water papEr namEology
-TAO : waTer pAper nameOlogy
-TANG : waTer pAper NameoloGy
-TROY : waTer papeR nameOlogY
-WATERY : WATEr papeR nameologY
-WAN : Water pAper Nameology
-TERRAL : waTER papeR nAmeoLogy
-WAO : Water pAper nameOlogy
-TANGY : waTer pAper NameoloGY
-WARE : WAter papeR namEology
-TERRA : waTER papeR nAmeology
-TARA : waTer pApeR nAmeology
-TERRAM : waTER papeR nAMeology
-TEL : waTer papEr nameoLogy
-WPA : Water Paper nAmeology
 
+TEN : waTer papEr Nameology
+
+TRY : waTer papeR nameologY
+
+TEAM : waTEr pAper naMeology
+
+TERM : waTEr papeR naMeology
+
+WARM : WAter papeR naMeology
+
+TREE : waTeR papEr namEology
+
+TAPE : waTer pAPer namEology
+
+TEA : waTer papEr nAmeology
+
+TRAY : waTeR pAper nameologY
+
+WEARY : WatEr pApeR nameologY
+
+WARN : WAter papeR Nameology
+
+TAN : waTer pAper Nameology
+
+WARMLY : WAter papeR naMeoLogY
+
+TERRY : waTER papeR nameologY
+
+WARY : WAter papeR nameologY
+
+TEEN : waTEr papEr Nameology
+
+TEE : waTer papEr namEology
+
+TAG : waTer pAper nameoloGy
+
+WRY : Water papeR nameologY
+
+TAME : waTer pAper naMEology
+
+WEE : Water papEr namEology
+
+TAO : waTer pAper nameOlogy
+
+TANG : waTer pAper NameoloGy
+
+TROY : waTer papeR nameOlogY
+
+WATERY : WATEr papeR nameologY
